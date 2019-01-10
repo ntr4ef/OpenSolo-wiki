@@ -1,9 +1,9 @@
 # WELCOME TO OPEN SOLO #
 
-## Annoucements ##
+## Announcements ##
 
-***NEW: CONSOLIDTED REPOSITORY IS HERE***  
-Many of the seperate github repositories for the various aspects of Open Solo have been consolidated into one central repo, which is where you are now.  Anything that wasn't a fork of another repo has been converted to a subdirectory of this repo.  This includes sololink, shotmanager, solo-builder, artoo, sololink-python, stm32loader, meta-3dr, and yocto base.  Conveniently, these are the repos that see the most ongoing development.  As such, it will be much easier to manage that work in one place. Releases, tags, and branches will have some logic and consistency. The commit history from the old separate repos has been retained and all show up here still, so history is not lost or forgotten.
+***NEW: CONSOLIDATED REPOSITORY IS HERE***  
+Many of the separate github repositories for the various aspects of Open Solo have been consolidated into one central repo, which is where you are now.  Anything that wasn't a fork of another repo has been converted to a subdirectory of this repo.  This includes sololink, shotmanager, solo-builder, artoo, sololink-python, stm32loader, meta-3dr, and yocto base.  Conveniently, these are the repos that see the most ongoing development.  As such, it will be much easier to manage that work in one place. Releases, tags, and branches will have some logic and consistency. The commit history from the old separate repos has been retained and all show up here still, so history is not lost or forgotten.
 
 Mavproxy and mavlink-solo remain separate repos, included here as submodules. These are forks from ArduPilot, and shall remain in their repos for that reason.  Ultimately, it would be great to just use the master ArduPilot repos, but the Solo's firmware is too old.  So these forks are circa 2016.  The imx6-linux and imx6-uboot are also still in their own repos. They are forks, and have tens of thousands of commits each. They also are untouched since 2016, and will probably remain so.
 
