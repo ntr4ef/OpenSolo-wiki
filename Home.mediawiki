@@ -8,7 +8,7 @@ Mavproxy and mavlink-solo remain separate repos, included here as submodules. Th
 ArduPilot-solo is the repo for the old stock ArduCopter firmware from 3DR.  It is a fork from ArduPilot, stale since 2016 other than one commit for Open Solo 3.  This will as such be remaining its own repo, included here as a submodule for reference.  Once ArduCopter 3.7 stable is released, this repo will be obsolete and deprecated.
 ----
 
-== Install Open Solo! ==
+== INSTALL OPEN SOLO! ==
 The team working on safe, reliable releases of Open Solo publishes them here. You can read all the details in the release notes, and link directly to installation instructions. These are the "official" instructions. These instructions supersede any other older instructions, videos, and wikis that came before Open Solo.
 
 '''Go to the [[Install Open Solo]] page to begin.'''
