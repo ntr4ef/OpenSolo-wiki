@@ -1,0 +1,17 @@
+= Install Open Solo =
+
+The team working on safe, reliable releases of Open Solo publishes them here. You can read all the details in the release notes, and link directly to installation instructions. These are the "official" instructions. These instructions supersede any other older instructions, videos, and wikis that came before Open Solo.
+
+
+== OPEN SOLO v3.0.0 STABLE RELEASE ON JANUARY 1, 2018 ==
+
+Check out the [https://github.com/OpenSolo/documentation/releases >> Release Notes <<] for Open Solo 3.0.0 in the old Documentation repo.
+
+* For _stock solos and previously installed and working green cubes_, go straight to the Open Solo installation procedures:
+** [https://github.com/OpenSolo/documentation/blob/master/install_solex.md Install with Solex App]
+** [https://github.com/OpenSolo/documentation/blob/master/initial_sidepilot.md Install with SidePilot App]
+** [https://github.com/OpenSolo/documentation/blob/master/initial_ssh.md Install with SSH]
+** [https://github.com/OpenSolo/documentation/blob/master/install_sdimage.md Install/Recovery with SD card images]
+  
+* For a _brand new Green Cube installation_ please follow these updated instructions!
+**[https://github.com/OpenSolo/documentation/blob/master/green_cube_install.md New green cube installation procedure]
