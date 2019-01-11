@@ -1,6 +1,6 @@
 '''[[Home|Open Solo Home]]'''<br>
 '''[[Install Open Solo]]'''<br>
-'''[[Firmware We Use|Firmware]]'''<br>
+'''[[Firmware|Firmware We Use]]'''<br>
 [[IMX Firmware |- IMX Firmware]]<br>
 [[ArduCopter Firmware | - ArduCopter]]<br>
 [[Artoo STM32 | - Artoo STM32]]<br>
