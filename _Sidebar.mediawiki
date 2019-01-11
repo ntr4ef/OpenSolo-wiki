@@ -1,4 +1,4 @@
-'''[[Open Solo Home|Home]]'''<br>
+'''[[Home|Open Solo Home]]'''<br>
 '''[[Install Open Solo]]'''<br>
 '''[[Firmware We Use|Firmware]]'''<br>
 [[IMX Firmware |- IMX Firmware]]<br>
