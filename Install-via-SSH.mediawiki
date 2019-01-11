@@ -2,7 +2,7 @@
 
 The firmware binaries can be installed directly using SSH and SCP. Connect your PC to the Solo's WiFi. If you never changed the Solo's WiFi password, the default is sololink.  You will want to do the copter first, since you will lose connectivity when the controller update initiates.
 
-''If you are upgrading a stock cube that still has the old 3DR 1.3.2 or 1.5.4 ArduCopter firmware, you need to install ArduCopter 3.7 first! The old firmware is so old, it will not place nicely during the full IMX update, so we need to do it separately first.''
+''If you are upgrading a stock cube that still has the old 3DR 1.3.2 or 1.5.4 ArduCopter firmware, you need to install ArduCopter 3.7 first! The old firmware is so old, it will not place nicely during the full IMX update, so we need to do it separately first.'' Visit the [[ArduCopter Firmware]] for instructions.
 
 If your Cube is already on ArduCopter 3.5, 3.6, or 3.7, you do not need to pre-install ArduCopter.  The IMX update will handle it without issue.'''
 
