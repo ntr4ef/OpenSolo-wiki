@@ -10,14 +10,15 @@ The full Open Solo IMX companion computer Linux file system packages are install
 
 More detail and installation instructions are available on the [[IMX Firmware]] page.
 ----
-== Artoo STM32 Firmware ==
-
-The controller's STM32 hardware controls the sticks, buttons, display, battery, haptic, and lights.  It is a separate piece of hardware in the controller from the IMX, which has its own firmware.  ''This firmware is included in the IMX Firmware package''.  So you would only be using this separate firmware loading process if you're making changes specific to it.  
-
-More detail and installation instructions are available on the [[Artoo STM32]] page.
-----
 == ArduCopter Firmware ==
 
 The Solo contains, among many things, a Cube 2.0 flight controller. The Cube runs the open source ArduCopter firmware from the ArduPilot project.  The Cube and ArduCopter are what actually flies your copter. (The IMX Linux computer provides input, telemetry, ground connection, smart shots, etc).
 
 More detail and installation instructions are available on the [[ArduCopter Firmware]] page
+----
+== Artoo STM32 Firmware ==
+
+The controller's STM32 hardware controls the sticks, buttons, display, battery, haptic, and lights.  It is a separate piece of hardware in the controller from the IMX, which has its own firmware.  ''This firmware is included in the IMX Firmware package''.  So you would only be using this separate firmware loading process if you're making changes specific to it.  
+
+More detail and installation instructions are available on the [[Artoo STM32]] page.
+
