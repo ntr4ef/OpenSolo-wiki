@@ -1,0 +1,72 @@
+= ArduCopter Open Source Autopilot Firmware =
+The Solo contains, among many things, a Cube 2.0 flight controller. The Cube runs the open source ArduCopter firmware from the ArduPilot project.  The Cube and ArduCopter are what actually flies your copter. (The IMX Linux computer provides input, telemetry, ground connection, smart shots, etc).
+----
+=== 3DR's Old ArduCopter Firmware ===
+Out of the box from 3DR (and in the most recent 3DR 2.4.2 Firmware), the Cube comes with a heavily customized branch of an early ArduCopter 3.3 compiled specifically for the Solo by 3DR. When you do the initial pre-flight update on a new Solo (or after a factory reset), part of that update is this Solo branch of ArduCopter. It is installed on the Cube, and has all the necessary default parameters and customization baked into it. It is essentially transparent to the user, taking place behind the curtains.
+
+The most recent version 3DR ArduCopter firmware released to consumer users was called version 1.3.2. It was packaged with the 2.4.2 Firmware most stock solos have loaded from the 3DR Solo app.
+
+Since 3DR is no longer in the consumer UAS business, this custom branch of ArduCopter will not be seeing any further updates. It was last updated in early 2016, and is now very far behind.  As of January 2019, the ArduPilot project is working on ArduCopter 3.7.
+
+Hardware and firmware limitations in place until now prevented the installation of newer versions of ArduCopter on stock solo cubes.
+
+----
+=== ArduCopter 3.5 and 3.6 in Open Solo 3 Green Cubes ===
+In January of 2018, Open Solo 3 upgraded stock Solos to 3DR's last update that was only released to commercial site scan users.  For Open Solo, this version of ArduCopter was updated for consumer Solo settings and called version 1.5.4.
+
+If you installed a Green Cube, Open Solo 3 brought you a new stable version of ArduCopter.  At the time in January 2018, that was ArduCopter 3.5.4.
+
+Again, hardware and firmware limitations in place until now prevented the installation of newer versions of ArduCopter on stock solo cubes. This why Open Solo 3 installed different versions of ArduCopter for those who upgraded to a Green Cube.
+----
+=== ArduCopter 3.7 (''Development Beta'')===
+'''ArduCopter 3.7 will be fully compatible with all Solos, whether you are totally stock or green cubed.'''  There will no longer be a requirement for different firmware versions.  All users will get all features and benefits of the latest and greatest ArduCopter firmware.
+
+Beta testing of ArduCopter 3.7 is currently in progress in the [https://www.facebook.com/groups/617648671719759 Solo Beta Test Facebook Group.]
+
+''Note: Older versions of ArduCopter used old NuttX RTOS based firmware and a <code>*.px4</code> file extension.  This includes the ArduCopter versions included in Open Solo 3 and from 3DR.  ArduCopter 3.7 uses the new ChibiOS RTOS. The firmware files have a file extension of <code>*.apj</code>.  Due to the file extension change, the firmware will not load without some additional file changes.  The beta testing packages in Solex and SidePilot include this''
+
+The upcoming Open Solo 4 will include ArduCopter 3.7 fully compatible with all Solos, marking a huge milestone for the Solo and Open Solo community.
+----
+= Installing ArduCopter Firmware =
+
+ArduCopter firmware is included in the 3DR and Open Solo IMX firmware packages, but different versions can be loaded separately at any time.  There are several methods you may choose from.
+
+==== Notes For All Methods ====
+* If you are upgrading ''to ArduCopter 3.7 from the old 3DR firmware on a stock cube:'' it will not stop the disco lights and will not play the happy tones when it is done installing.  Therefore, just wait 2 minutes. Then power off the Solo and power it back on.  When it boots back up, you'll have the new lights and everything will be fine.
+* If you are upgrading ''to ArduCopter 3.7 from 3.5 or 3.6:'' The lights will go back to normal and you'll get the happy tones once installation is complete.
+* If you are upgrading to a ''new major version'' (ex 1.3.2 -> 3.7 or 3.5 -> 3.6), it is strongly recommended that you do a parameter reset. After resetting parameters, follow the [[Post Install Instructions]].
+* If the Solo and Controller do not automatically reconnect promptly, simply reboot both of them as they may have timed out.
+----
+=== Install via Solex on Android ===
+ArduCopter firmware compiled specifically for the Solo is available in Solex. The firmware has all the Solo's required default parameters baked in so everything will work properly.  These versions of ArduCopter are know to be working well and and safe for the Solo, with any restrications listed in the package descriptions.
+
+# '''While connected to the Internet''', go to the Solex FW Updates menu.  Press refresh and cleanup.
+# Tap the ArduCopter firmware package you wish to install.  Tap download. Available will change to downloaded once complete.
+# '''Reconnect to Solo WiFi''' and Connect Solex to the Solo. Allow parameter download to complete.
+# In the Solex FW Updates menu, tap the ArduCopter firmware package you wish to install. Tap install and proceed.
+# When prompted, you can close the FW install menus in Solex.
+# Reboot the copter.  After powering up, you will hear the Cube click and reboot.  The process takes about 45 seconds.
+----
+=== Install via SidePilot on iOS ===
+ArduCopter firmware compiled specifically for the Solo is available in SidePilot. The firmware has all the Solo's required default parameters baked in so everything will work properly.  These versions of ArduCopter are know to be working well and and safe for the Solo, with any restrications listed in the package descriptions.
+
+# '''While connected to the Internet'''', go to the SidePilot 'Help & Settings' menu, and tap the '3DR Solo Firmware Upgrade' menu
+# Download the ArduCopter firmware package you wish to install.
+# '''Reconnect to Solo WiFi''' tap the connect button in the top right corner of the SidePilot main screen. Ensure you begin receiving telemetry data before continuing. Again, your solo and controller must be fully charged, powered on, paired, connected, and not malfunctioning.
+# From the firmware updates menu in SidePilot, tap the ArduCopter firmware package that you previously downloaded. Tapping the 'Install' button.
+# When prompted, you can close the FW install menu.
+# Reboot the copter.  After powering up, you will hear the Cube click and reboot.  The process takes about 45 seconds.
+----
+=== Install Via SCP/SFTP Application ===
+ArduCopter firmware can be installed directly using SCP or and SFTP application if you love keyboards and terminals.
+
+ArduCopter firmware binaries specifically for the solo, with all the default parameters baked in can be downloaded from the Open Solo firmware directory.
+* [https://github.com/Pedals2Paddles/OpenSolo/tree/master/Firmware/ArduCopter Open Solo's firmware directory]  contains binaries specifically for the solo, with all the default parameters baked in. These are know, tested, safe firmware versions for the solo. This includes ArduCopter 3.5.4, 3.6.3, 3.7-dev Beta, and the old 1.5.4.
+* [http://firmware.us.ardupilot.org/Copter/latest/CubeGreen-solo ArduCopter development master] for Green Cube solos only on ArduPilot firmware autobuild server. This is bleeding edge and may not have been tested specifically for Solo yet.  But it will have all the required default parameters baked in.
+* [http://firmware.us.ardupilot.org/Copter/latest/CubeBlack-solo ArduCopter development master] for all Solos exists but is '''''not yet safe for use on the Solo'''''.  Once the slew rate protection PR is merged into master, this will be compatible with all Solos.
+
+# Download the Arducopter firmware file of your choice to your PC.
+# Connect your PC to the Solo's WiFi. If you never changed the Solo's wifi password, the default is <code>sololink</code>.
+# Connect via SCP or an SFTP application to the '''copter''' with IP 10.1.1.10, username root, password TjSDBkAu
+# Copy the ArduCopter firmware file (*.px4 or *.apj) into the <code>/firmware</code> directory on the copter
+# Reboot the copter.  After powering up, you will hear the Cube click and reboot.  The process takes about 45 seconds.
