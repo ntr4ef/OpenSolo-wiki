@@ -3,6 +3,6 @@
 [[IMX Firmware |- IMX Firmware]]<br>
 [[ArduCopter Firmware | - ArduCopter]]<br>
 [[Artoo STM32 | - Artoo STM32]]<br>
-'''Upgrade to Open Solo'''<br>
+'''[[Install Open Solo]]'''<br>
 [[Install via Solex App | - Install with Solex]]<br>
 [[Install via SSH | - Install with SSH]]<br>
