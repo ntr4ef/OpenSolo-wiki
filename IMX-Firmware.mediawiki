@@ -1,0 +1,14 @@
+= IMX Companion Computer Firmware =
+
+The full Open Solo IMX companion computer Linux file system packages are installed on the Copter and Controller's IMX companion computers. These packages also contain all the other firmware, such as ArduCopter and the controller's STM32. These packages are complete updates, and are about 75mb each.
+
+When you got the old 3DR 2.4.2 (and prior) firmware updates from the old 3DR Solo app, this is what you were getting.  When you upgrade to Open Solo, this is also what you're getting.
+
+''If you wish to upgrade to Open Solo, this is where you need to be! The current stable version is'' '''''Open Solo 3.0.0.'''''
+
+Developers can build custom versions of the Open Solo IMX firmware using the [[Solo Builder]].
+
+There are several ways to install this Open Solo firmware:
+* [[Install via Solex App]] or [[Install via SidePilot App]] for a completely automated update
+* [[Install via SSH]] if you love your keyboard and SSH terminals
+* [[SD Card Image]] installation requires disassembly. This is usually only for major problem recovery
