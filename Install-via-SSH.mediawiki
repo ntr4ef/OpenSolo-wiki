@@ -1,0 +1,30 @@
+== Installing IMX Firmware via SSH/SCP ==
+
+The firmware binaries can be installed directly using SSH and SCP. Connect your PC to the Solo's WiFi. If you never changed the Solo's WiFi password, the default is sololink.  You will want to do the copter first, since you will lose connectivity when the controller update initiates.
+
+''If you are upgrading a stock cube that still has the old 3DR 1.3.2 or 1.5.4 ArduCopter firmware, you need to install ArduCopter 3.7 first! The old firmware is so old, it will not place nicely during the full IMX update, so we need to do it separately first.''
+
+If your Cube is already on ArduCopter 3.5, 3.6, or 3.7, you do not need to pre-install ArduCopter.  The IMX update will handle it without issue.'''
+
+==== Copter IMX ====
+
+# SSH into the '''copter''' with IP 10.1.1.10, username root, password TjSDBkAu.
+# <code>$ sololink_config --update-prepare sololink</code> cleans up and prepares the directories.
+# Copy <code>3dr-solo.tar.gz</code> and <code>3dr-solo.tar.gz.md5</code> to the <code>/log/updates</code> directory on the copter.
+# <code>$ sololink_config --update-apply sololink --reset</code> executes the update and reboots.
+
+==== Controller IMX ====
+
+# SSH into the '''controller''' with IP 10.1.1.1, username root, password TjSDBkAu
+# <code>$ sololink_config --update-prepare sololink</code> cleans up and prepares the directories.
+# Copy <code>3dr-controller.tar.gz</code> and <code>3dr-controller.tar.gz.md5</code> to the <code>/log/updates</code> directory on the controller.
+# <code>$ sololink_config --update-apply sololink --reset</code> executes the update and reboots.
+
+==== Golden Image (Factory Reset) Partition Update ====
+
+Once the copter and controller are updated, you can now make your factory reset partition Open Solo as well. This is highly recommended.  Otherwise a factory reset will put you back to the old unusable 3DR golden image. The process is the same for the copter and controller.  With Open Solo, if you do a factory reset, it will automatically reinstall a clean version of Open Solo back to the system partition, reset ArduCopter parameters, and get you fully operational again. No internet or manual updates required.
+
+# SSH into the '''copter''' with IP 10.1.1.10, username root, password TjSDBkAu.
+# <code>$ sololink_config --make-golden</code> executes the update. Disconnect when complete.
+# SSH into the '''controller''' with IP 10.1.1.1, username root, password TjSDBkAu
+# <code>$ sololink_config --make-golden</code> executes the update. Disconnect when complete.
