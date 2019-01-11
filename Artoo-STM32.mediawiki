@@ -8,7 +8,7 @@ Some compiled versions of the Artoo STM32 firmware can be found in the [/Firmwar
 
 == Building the Artoo STM32 Firmware ==
 
-To build the Artoo STM32 firmware, you must use the vagrant virtual machine, which will have everything configured by script. We can assure with 100% confidence that trying to run the builder naively on your own Linux machine will not work.  The vagrant VM is configured to have all required packages, and uses Ubuntu 14.04.  Nothing newer will work.  Do not attempt to upgrade the Vagrant VM, even if it suggests you do so.  Everything will explode.
+To build the Artoo STM32 firmware, you must use the [[Vagrant VM|Open Solo vagrant virtual machine]], which will have everything configured by script. We can assure with 100% confidence that trying to run the builder naively on your own Linux machine will not work.  The vagrant VM is configured to have all required packages, and uses Ubuntu 14.04.  Nothing newer will work.  Do not attempt to upgrade the Vagrant VM, even if it suggests you do so.  Everything will explode.
 
 ''The vagrant VM used for Artoo is also used for solo-builder.  So if you already installed and setup the VM for solo-builder, you can skip right to executing the build''
 
@@ -33,9 +33,10 @@ The build produces <code>artoo.bin</code> which is deposited in the /artoo direc
 
 == Install Artoo STM32 Firmware On Controller ==
 
-The default filename is <code>artoo.bin<code>.  You can rename it, as long as it begins with <code>artoo_<code>.  For example, you can name the file <code>artoo_1234xyz.bin<code>.  This firmware can be installed directly using SCP or and SFTP application. Connect your PC to the Solo's WiFi. If you never changed the Solo's wifi password, the default is sololink.
+The default filename is <code>artoo.bin</code>.  You can rename it, as long as it begins with <code>artoo_</code>.  For example, you can name the file <code>artoo_1234xyz.bin</code>.  This firmware can be installed directly using SCP or and SFTP application. Connect your PC to the Solo's WiFi. If you never changed the Solo's wifi password, the default is sololink.
 
 ''Doublecheck the .bin file to make sure it is about 200-300kb in size. If it's 0kb, the build failed and it shouldn't be loaded''
+
 # Connect via SCP or an SFTP application to the **controller** with IP 10.1.1.10, username root, password TjSDBkAu
 # Copy <code>artoo.bin</code> to the <code>/firmware</code> directory on the controller.
 # Reboot the controller.  When powering up, the display will go out and come back on during the update.
