@@ -1,8 +1,6 @@
 '''[[Open Solo Home|Home]]'''<br>
+'''[[Install Open Solo]]'''<br>
 '''[[Firmware We Use|Firmware]]'''<br>
 [[IMX Firmware |- IMX Firmware]]<br>
 [[ArduCopter Firmware | - ArduCopter]]<br>
 [[Artoo STM32 | - Artoo STM32]]<br>
-'''[[Install Open Solo]]'''<br>
-[[Install via Solex App | - Install with Solex]]<br>
-[[Install via SSH | - Install with SSH]]<br>
