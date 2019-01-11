@@ -20,3 +20,20 @@ The team working on safe, reliable releases of Open Solo publishes them here. Yo
 
 == ARDUCOPTER 3.7-DEV TESTING ==
 [https://github.com/OpenSolo/documentation/blob/master/copter37.md Release notes and instructions] as of December 8, 2018 for beta testing ArduCopter 3.7-dev on the Solo.  You must already be on Open Solo to do this.  This is a major beta testing project.  It is highly recommended that you visit the [https://www.facebook.com/groups/617648671719759 Solo Beta Test Group on Facebook].
+
+----
+
+== Support, Social Media, and other useful links ==
+* [https://www.facebook.com/groups/617648671719759 Solo Beta Test) group on Facebook (primary Open Solo and Green Cube support group!!)
+* [https://www.facebook.com/groups/3DRSOLOModClub Solo Mod Club] group on Facebook
+* [https://www.facebook.com/groups/176789056089526 Solex Users) group on Facebook
+* [http://www.solexapp.com Solex App] official website. This app is truely the future of Solo's user interface!
+* [https://www.facebook.com/sidepilotapp SidePilot Community] group on Facebook
+* [http://jestersdrones.org/store/l Jester's Drones] for the Green Cube and other cool gear
+* [http://ardupilot.org ArduPilot] homepage
+* [http://ardupilot.org/copter/docs/parameters.html ArduCopter Full Parameter List] details all 800 something parameters in ArduCopter.
+* [http://ardupilot.org/copter/docs/introduction.html ArduCopter introduction]: Learn what you're getting yourself into :)
+* [http://ardupilot.org/planner/docs/common-install-mission-planner.html Mission Planner] ground station app for Windows
+* [https://filezilla-project.org/download.php?type=client Filezilla] for moving files to/from the companion computer
+* [https://winscp.net/eng/download.php WinSCP] for moving files to/from the companion computer
+
