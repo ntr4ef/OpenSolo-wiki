@@ -1,4 +1,4 @@
-= WELCOME TO OPEN SOLO =
+'''WELCOME TO OPEN SOLO'''
 
 == Announcements ==
 '''''NEW: CONSOLIDATED REPOSITORY IS HERE'''''
