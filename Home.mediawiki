@@ -1,6 +1,25 @@
 
 
+= WELCOME TO OPEN SOLO =
 
+== Announcements ==
+'''''NEW: CONSOLIDATED REPOSITORY IS HERE'''''
+Many of the separate github repositories for the various aspects of Open Solo have been consolidated into one central repo, which is where you are now.  Anything that wasn't a fork of another repo has been converted to a sub-directory of this repo.  This includes sololink, shotmanager, solo-builder, artoo, sololink-python, stm32loader, meta-3dr, and yocto base.  Conveniently, these are the repos that see the most ongoing development.  As such, it will be much easier to manage that work in one place. Releases, tags, and branches will have some logic and consistency. The commit history from the old separate repos has been retained and all show up here still, so history is not lost or forgotten.
+
+Mavproxy and mavlink-solo remain separate repos, included here as submodules. These are forks from ArduPilot, and shall remain in their repos for that reason.  Ultimately, it would be great to just use the master ArduPilot repos, but the Solo's firmware is too old.  So these forks are circa 2016.  The imx6-linux and imx6-uboot are also still in their own repos. They are forks, and have tens of thousands of commits each. They also are untouched since 2016, and will probably remain so.
+
+ArduPilot-solo is the repo for the old stock ArduCopter firmware from 3DR.  It is a fork from ArduPilot, stale since 2016 other than one commit for Open Solo 3.  This will as such be remaining its own repo, included here as a submodule for reference.  Once ArduCopter 3.7 stable is released, this repo will be obsolete and deprecated.
+----
+
+== Install Open Solo! ==
+The team working on safe, reliable releases of Open Solo publishes them here. You can read all the details in the release notes, and link directly to installation instructions. These are the "official" instructions. These instructions supersede any other older instructions, videos, and wikis that came before Open Solo.
+
+'''Go to the [[Install Open Solo]] page to begin.'''
+
+----
+
+== ARDUCOPTER 3.7-DEV TESTING ==
+[https://github.com/OpenSolo/documentation/blob/master/copter37.md Release notes and instructions] as of December 8, 2018 for beta testing ArduCopter 3.7-dev on the Solo.  You must already be on Open Solo to do this.  This is a major beta testing project.  It is highly recommended that you visit the [https://www.facebook.com/groups/617648671719759 Solo Beta Test Group on Facebook].
 
 
 
