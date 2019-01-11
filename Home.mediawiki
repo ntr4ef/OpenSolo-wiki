@@ -57,10 +57,10 @@ If you're the geeky type that wants to read all the commits to see what has been
 * Visit [[Artoo STM32]] for steps to build just the Artoo STM32 firmware
 ----
 
-=== How to get involved ===
+== How to get involved ==
 This documentation is pretty empty right now.  If you know how Solo or Artoo works (or don't know!) and want to get involved pull requests are welcome on this documentation and all of the sub projects. Most of the developers are hanging out on [https://gitter.im/ArduPilot/OpenSolo gitter] and the social media groups listed above.
 
 ----
 
-=== Special Mentions! ===
+== Special Mentions! ==
 All of this would not be possible without 3DR.  They very generously open sourced most of their internal code and build tools to make this possible. You can see the official  [https://3dr.com/blog/announcing-opensolo 3DR release statement here] and the [https://discuss.ardupilot.org/t/opensolo-initiative-by-the-ardupilot-team ArduPilot Team's statement here]. Special thanks to Buzz and Peter for making this happen, and everyone else who has contributed to make solo even better.
