@@ -12,6 +12,6 @@ Check out the [https://github.com/OpenSolo/documentation/releases >> Release Not
 ** [https://github.com/OpenSolo/documentation/blob/master/initial_sidepilot.md Install with SidePilot App]
 ** [https://github.com/OpenSolo/documentation/blob/master/initial_ssh.md Install with SSH]
 ** [https://github.com/OpenSolo/documentation/blob/master/install_sdimage.md Install/Recovery with SD card images]
-  
+
 * For a _brand new Green Cube installation_ please follow these updated instructions!
 **[https://github.com/OpenSolo/documentation/blob/master/green_cube_install.md New green cube installation procedure]
