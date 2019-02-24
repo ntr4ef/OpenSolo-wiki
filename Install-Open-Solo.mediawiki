@@ -2,6 +2,73 @@
 
 The team working on safe, reliable releases of Open Solo publishes them here. You can read all the details in the release notes, and link directly to installation instructions. These are the "official" instructions. These instructions supersede any other older instructions, videos, and wikis that came before Open Solo.
 
+== OPEN SOLO v4-Beta ==
+
+'''Open Solo 4, which includes the latest ArduCopter 3.7-dev, is now ready for beta testing on all Solos. Even old stock cube solos can use the latest ArduCopter, no green cube required!'''
+
+The changes in Open Solo 4 have already been through rather extensive testing before this beta release, and is very reliable. The only reason it is still beta is the ArduCopter firmware is not a release version yet. Open Solo 4-Beta includes ArduCopter 3.7-dev.  It will probably not be the official release version of ArduCopter until later in 2019.  However it is extensively tested, safe, and stable for use in the Solo.  It includes the slew rate protection code, making it compatible with all Solos.  Every solo can now have the latest and greatest!
+
+=== Installation Instructions ===
+
+* [[Install via Solex App]] to use Solex on your Android device.
+* [[Install via SidePilot App]] instructions coming soon. (Similar process to Solex).
+* [[Install via SSH]] if you love your keyboard and terminal windows.
+
+=== Features and Changes ===
+
+==== Changes from Open Solo 3 ====
+
+* ArduCopter 3.7-dev compatible with all Solos. No green cube required!
+* Home button short hold: New smart RTL mode!
+* Unhealthy battery warnings: Monitors cell voltage differences to warn if one cell is getting lower than the others too fast. Also monitors battery's reported full charge capacity to warn the user if it is unhealthy (below 3500mah).
+* GoPro clock set! Will automatically update the GoPro's clock to match the GPS set system clock. The GoPro clock setting requires editing /usr/bin/extSettings.conf. Change the timeOffsetHrs=none to whatever your offset is. For example, eastern time in the USA would be timeOffsetHrs=-5.
+* Can install on a NIB solo or from a factory reset state without requiring the initial 3DR update first
+* Less annoying haptic (vibration) on the controller when compass is not calibrated yet
+* Improved Fly Mode (loiter mode) is way smoother
+* More installation improvements to prevent bricking
+* Compatibility with ArduCopter's new ChibiOS RTOS and APJ file extensions
+* All improvements, new flight modes, and bugfixes through ArduCopter 3.5, 3.6, and 3.7-dev.
+
+==== Highlights from Open Solo 3 ====
+
+All features from Open Solo 3 are still there.  Listing some highlights here for new users.
+
+* No more 3DR: This version was compiled by the Open Solo team in the Open Solo repositories. It cuts the cord from 3DR's firmware server completely. Can install without requiring the initial 3DR update first, and can install even from a factory reset state.
+* Factory reset update: This updates the factory reset (recovery partition) to no longer require 3DR servers or an internet update. If you factory reset, it will come back up with a clean installation of Open Solo that is fully operational! No internet needed. No update needed. Calibrate and fly.
+* Solo's required default parameters baked in. No parameter file loading needed!
+* Botched installation protection helps prevent bricking.
+* Improved landing detection: This greatly improves the solo's ability to detect it has landed. In the past, it could get confused by a rough, fast, or jerky landing. This results in it refusing to disarm or and sometimes flipping over. The new landing detection algorithm is greatly enhanced. You will notice it now takes and extra second or so to disarm once you're on the ground. And you may see a little twitch in the throttle. It is literally testing the ground. It works quite nicely.
+* Low battery thrust priority: If the battery is getting dangerously low, it will allow itself to sacrifice yaw (rotation) control to increase thrust to prevent a crash. This could give you the thrust you need to land softly rather than dropping out of the sky.
+* Smart shot altitude priority: Will not lose altitude by going too fast in Follow Mode! In Smart Shots, the solo will not allow itself to go "too fast" causing a loss of altitude.
+* Boat mode! You can arm and take off from moving vehicles/vessels.
+* Ability to use RTK GPS for surveys, ADS-B aircraft avoidance, lidar laser altimeters, terrain awareness and following, IR precision landing, and even an “indoor GPS”.
+* Hundreds of enhancements since 2015, and continued development by the ArduPilot team.
+* Controller: short and long hold button functions: Added short hold (2-seconds) and long hold (3 seconds) events to the A, B, Pause, camera preset, and camera trigger buttons. This allows you to assign and use functions based on short and long holding the buttons. The assignments can be edited in /usr/bin/extSettings.conf. The defaults are as follows:
+** A single press: Manual
+** A short hold: Stabilize
+** A long hold: Auto mode
+** B single press: Position Hold
+** B short hold: Drift
+** B long hold: Sport
+** Camera Preset top long hold: None
+** Camera Preset bottom long hold: None
+** Camera trigger long hold: Gimbal lock ("FPV race mode")
+* Controller: CH7 on/off improvement: Long hold pause button to turn CH7 option on. Short hold pause to turn CH7 option off. This removes the conflict with the pause function, which still uses the normal single click. If you use landing gear, you should keep using this for now.
+* Controller display and haptic: Updated numerous displayed messages and haptic feedback to be more useful and helpful to the user.
+* Safety & Mode Reliability: Removed numerous unnecessary layers from communication between the controller and ArduCopter. The fly, home, and pause button functions now communicate directly to the Cube and ArduCopter rather than going through layers of handling in the smart shot manager. Also made mode changes better handle a smart shot that didn't properly close.
+* Smart shot cleanups and compatibility fixes:
+** All the compatibility fixes needed for the green cube.
+** Standardized horizontal acceleration to 2/m/s/s across all shots for consistency and smoothing.
+** Entering shot reduces copter pitch/roll acceleration for smoothing and consistency, especially with green cube solos that have more power.
+** Added compatibility with Solex geotagging functions
+** Home button and RTH failsafe now use ArduCopter RTL Mode instead of the old "Return Home" smart shot. This is more reliable and eliminates numerous points of failure. They have the same end result.
+* Newer version of some system files to make troubleshooting and recovery from problems easier.
+* Factory reset will now reset the ArduCopter parameters on the pixhawk to default as well. This was always a troubleshooting problem, and eliminates unnecessary extra steps.
+* Lost functionality: Unfortunately, two things had to get sacrificed in this due to compatibility and incomplete development from 3DR. The impact should be rather minimal.
+** Rewind has been removed. The 3DR Solo app still has the option to turn it on/off, which also never worked right, and they will not do anything. This was a feature 3DR was in the middle of developing when they closed shop. It is not compatible with ArduCopter RTL mode. It is something that may be revised in the future as something that isn't connected to any failsafe and is executed with a button push. But not right now.
+** Hover instead of landing in return to home or return to me has been removed. This was intertwined with the rewind code and the old return home smart shot. It is not compatible with ArduCopter RTL mode. And it also was incomplete and not really safe to use anyway. This again is something I'd like to revisit in the future, since it has some use cases (like boating). But for now, it's only returns home (or return to me) and lands when it gets there. Alternative for now: If you need the hover option, you can manually increase ArducCopter parameter RTL_LOIT_TIME. It is in milliseconds. It is the amount of time the copter will hover prior landing. If simply turn it up to several minutes or whatever suites you needs, you will have the same effect.
+
+----
 
 == OPEN SOLO v3.0.0 STABLE RELEASE ON JANUARY 1, 2018 ==
 
