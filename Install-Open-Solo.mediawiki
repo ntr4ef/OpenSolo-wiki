@@ -22,6 +22,7 @@ The changes in Open Solo 4 have already been through rather extensive testing be
 * Home button short hold: New smart RTL mode!
 * Unhealthy battery warnings: Monitors cell voltage differences to warn if one cell is getting lower than the others too fast. Also monitors battery's reported full charge capacity to warn the user if it is unhealthy (below 3500mah).
 * GoPro clock set! Will automatically update the GoPro's clock to match the GPS set system clock. The GoPro clock setting requires editing /usr/bin/extSettings.conf. Change the timeOffsetHrs=none to whatever your offset is. For example, eastern time in the USA would be timeOffsetHrs=-5.
+* Camera shutter trigger in ArduCopter if no GoPro is connected
 * Can install on a NIB solo or from a factory reset state without requiring the initial 3DR update first
 * Less annoying haptic (vibration) on the controller when compass is not calibrated yet
 * Improved Fly Mode (loiter mode) is way smoother
