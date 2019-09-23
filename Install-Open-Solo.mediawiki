@@ -4,9 +4,9 @@ The team working on safe, reliable releases of Open Solo publishes them here. Yo
 
 == OPEN SOLO 4-dev ==
 
-'''Open Solo 4, which includes the latest ArduCopter 3.7-dev, is now ready for beta testing on all Solos. Even old stock cube solos can use the latest ArduCopter, no green cube required!'''
+'''Open Solo 4, which includes the latest ArduCopter 4-dev (formerly known as 3.7-dev), is now ready for beta testing on all Solos. Even old stock cube solos can use the latest ArduCopter, no green cube required!'''
 
-The changes in Open Solo 4 have already been through rather extensive testing before this beta release, and is very reliable. The only reason it is still beta is the ArduCopter firmware is not a release version yet. Open Solo 4-Beta includes ArduCopter 3.7-dev.  It will probably not be the official release version of ArduCopter until later in 2019.  However it is extensively tested, safe, and stable for use in the Solo.  It includes the slew rate protection code, making it compatible with all Solos.  Every solo can now have the latest and greatest!
+The changes in Open Solo 4 have already been through rather extensive testing before this beta release, and is very reliable. The only reason it is still beta is the ArduCopter firmware is not a release version yet. Open Solo 4-Beta includes ArduCopter 4-dev.  It will probably not be the official release version of ArduCopter until later in 2019.  However it is extensively tested, safe, and stable for use in the Solo.  It includes the slew rate protection code, making it compatible with all Solos.  Every solo can now have the latest and greatest!
 
 === Release Notes ===
 Please check out the latest release notes, located in the github releases sections.  Click here to go straight to it: https://github.com/OpenSolo/OpenSolo/releases
