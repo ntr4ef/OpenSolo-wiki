@@ -18,9 +18,9 @@ Visit the [[Vagrant VM]] page for first time installation and initialization of 
 
 ==== Command line options ====
 
-<code>% builder.sh</code> with no options will build the copter IMX, controller IMX, and the Artoo STM32 firmware.
+<code>% ./builder.sh</code> with no options will build the copter IMX, controller IMX, and the Artoo STM32 firmware.
 
-<code>$ builder.sh -a -m -c -n -s </code> option arguments are available:
+<code>$ ./builder.sh -a -m -c -n -s </code> option arguments are available:
 * <code>-a false</code> will skip building the Artoo STM32 FW and use what is already in the recipe files directory. Default is true if not specified.
 * <code>-m both</code> will build both the copter and controller IMX. This is the default if not specified.
 * <code>-m solo</code> will build only the copter's IMX, not the controller.
