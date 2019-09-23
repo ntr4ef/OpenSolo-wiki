@@ -1,5 +1,10 @@
 
 == Announcements ==
+'''''Version Numbers | ArduCopter 4.0 | Open Solo 4.0'''''
+The next release of Open Solo will be a major release. As such, it will go from v3.0 to v4.0.  At this time, the accompanying ArduCopter firmware is the development master (ArduCopter 4-dev). So for the time being, Open Solo 4 will be version 4-dev, then eventually 4-beta (probably October or November).  Once ArduCopter 4.0 is the complete stable release (probably January or February), we'll also call it Open Solo 4.0.
+
+As noted above, the next release of ArduCopter will be a major release.  As such, the version number will be going up to 4.0 rather than 3.7.  The development master branch of ArduCopter has therefore been changed from 3.7-dev to 4-dev.  Open Solo 4 will therefore include ArduCopter 4 for all Solos, fully compatible. *The fact that both are version 4 is completely coincidence, so don't read into that too much*.
+----
 '''''NEW: CONSOLIDATED REPOSITORY IS HERE'''''
 Many of the separate github repositories for the various aspects of Open Solo have been consolidated into one central repo, which is where you are now.  Anything that wasn't a fork of another repo has been converted to a sub-directory of this repo.  This includes sololink, shotmanager, solo-builder, artoo, sololink-python, stm32loader, meta-3dr, and yocto base.  Conveniently, these are the repos that see the most ongoing development.  As such, it will be much easier to manage that work in one place. Releases, tags, and branches will have some logic and consistency. The commit history from the old separate repos has been retained and all show up here still, so history is not lost or forgotten.
 
