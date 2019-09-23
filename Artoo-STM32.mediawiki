@@ -38,7 +38,7 @@ The default filename is <code>artoo.bin</code>.  You can rename it, as long as i
 ''Doublecheck the .bin file to make sure it is about 200-300kb in size. If it's 0kb, the build failed and it shouldn't be loaded''
 
 # Connect via SCP or an SFTP application to the **controller** with IP 10.1.1.10, username root, password TjSDBkAu
-# Copy <code>artoo.bin</code> to the <code>/firmware</code> directory on the controller.
+# Copy <code>artoo_whatever.bin</code> to the <code>/firmware</code> directory on the controller.
 # Reboot the controller.  When powering up, the display will go out and come back on during the update.
 
 If you inadvertently flash an empty or bad .bin file, it is generally easy to fix.  Simply redo these steps using a known good .bin file and it will load.
