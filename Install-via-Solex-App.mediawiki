@@ -39,7 +39,7 @@
 #* You do ''not'' need to load the ArduCopter parameters or ArduCopter firmware packages!!!
 #* Reboot the solo after loading all the applicable parameter packages.
 # In the Solex vehicle settings menu, you can verify everything installed by scrolling to the bottom and looking at the listed version information. Controller and Vehicle should say XXXXX.  Controller FW should say Open Solo XXXX.  And autopilot FW should say XXXX..
-# '''Update Factory Reset Partition:''' In the Solex FW Updates menu, there is a copter and controller package called ''Update Factory Reset Partition''.  Run each one to update your factory reset (recovery) partitions.  This will allow the Solo automatically reset back to a clean Open Solo 4-dev if you ever do a factory reset.
+# '''Update Factory Reset Partition:''' In the Solex FW Updates menu, there is a copter and controller package called ''Update Factory Reset Partition''.  Run each one to update your factory reset (recovery) partitions.  This will allow the Solo automatically reset back to a clean Open Solo 4 if you ever do a factory reset.  ''Note, this does not actually install anything. It just runs a script that updates the recovery partition's file system.  There no clicks, beeps, blinks, or bangs.  Solex will tell you when it is done, and that's it.''
 
 === Installation Complete! ===
 Proceed to the [[Post Install Instructions]].
