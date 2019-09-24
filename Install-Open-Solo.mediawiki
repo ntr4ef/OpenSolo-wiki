@@ -21,7 +21,7 @@ Please check out the latest release notes, located in the github releases sectio
 
 ==== Changes from Open Solo 3 ====
 
-* ArduCopter 3.7-dev compatible with all Solos. No green cube required!
+* ArduCopter 4-dev compatible with all Solos. No green cube required!
 * Home button short hold: New smart RTL mode!
 * Unhealthy battery warnings: Monitors cell voltage differences to warn if one cell is getting lower than the others too fast. Also monitors battery's reported full charge capacity to warn the user if it is unhealthy (below 3500mah).
 * GoPro clock set! Will automatically update the GoPro's clock to match the GPS set system clock. The GoPro clock setting requires editing /usr/bin/extSettings.conf. Change the timeOffsetHrs=none to whatever your offset is. For example, eastern time in the USA would be timeOffsetHrs=-5.
