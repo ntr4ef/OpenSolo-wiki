@@ -1,7 +1,7 @@
 
 == Announcements ==
 '''''Open Solo 4-dev Soft Launch 9/24/2019'''''
-Open Solo 4-dev, built from this new consolidated repository, including ArduCopter 4-dev, is available for installation in Solex, SidePilot, and SSH/SFTP.  Please for the love of god, actually read the installation instructions. The install procedure is different from Open Solo 3 (for the better).  I have not updated the SidePilot instructions yet. But if you're already familiar with SidePilot installs, the process is basically the same as the Solex instructions.  SSH/SFTP instructions are updated as well for those who love their keyboards.
+Open Solo 4-dev, built from this new consolidated repository, including ArduCopter 4-dev, is available for installation in Solex, SidePilot, and SSH/SFTP.  Please for the love of god, actually read the installation instructions. The install procedure is different from Open Solo 3 (for the better). Go to the [[Install Open Solo]] page to begin.  I have not updated the SidePilot instructions yet. But if you're already familiar with SidePilot installs, the process is basically the same as the Solex instructions.  SSH/SFTP instructions are updated as well for those who love their keyboards.
 
 '''''Version Numbers Note: ArduCopter 4.0 & Open Solo 4.0'''''
 The next release of Open Solo will be a major release. As such, it will go from v3.0 to v4.0.  At this time, the accompanying ArduCopter firmware is the development master (ArduCopter 4-dev). So for the time being, Open Solo 4 will be version 4-dev, then eventually 4-beta (probably October or November).  Once ArduCopter 4.0 is the complete stable release (probably January or February), we'll also call it Open Solo 4.0.
