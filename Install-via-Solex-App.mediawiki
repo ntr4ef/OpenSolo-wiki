@@ -17,16 +17,19 @@
 
 # '''Reconnect:''' Once you've downloaded both, reconnect your mobile device to the Solo WiFi and make sure Solex says connected to vehicle. Again, your solo and controller must be fully charged, powered on, paired, connected, and not malfunctioning. You may need to press the connect button in Solex to force it to reconnect.
 
-# '''Install Copter Package:''' From the firmware updates menu in Solex, tap one of the ''Open Solo 4-dev Clean Install (Copter)'' package that you previously downloaded.
+# '''Install Controller Package:''' From the firmware updates menu in Solex, tap the ''Open Solo 4-dev Clean Install (Controller)'' package that you previously downloaded.
+#* Press install. Press install again when prompted again to confirm. ''This is your last chance to change your mind''.
+#* Be patient while numerous large files are extracted and scripts execute. Do not push buttons, exit the app, mess with the Solo, etc. Let it do its thing. Until it says it has completed.
+#* Solex will tell you when the whole process is complete.
+#* '''DO NOT REBOOT THE CONTROLLER YET!''' You must do the install for both the controller and the copter before rebooting anything. Once Solex tells you the install is complete, leave the controller and move on to the copter install.
+
+# '''Install Copter Package:''' From the firmware updates menu in Solex, tap the ''Open Solo 4-dev Clean Install (Copter)'' package that you previously downloaded.
 #* Press install. Press install again when prompted again to confirm. ''This is your last chance to change your mind''.
 #* Again, be patient while numerous large files are extracted and scripts execute. Do not push buttons, exit the app, mess with the Solo, etc. Let it do its thing. Until it says it has completed.
 #* The solo will click and lights will go disco.  At this time, ArduCopter 3.7-dev firmware is being pre-installed on the Cube. This step takes about 1 minute and Solex will tell you when the whole process is complete.
-#* ''Stock cube users upgrading from the old firmware:'' you will not get any happy tones to indicate firmware loading completed, and the lights will stay disco. This is not a problem, and this is why we're pre-loading the firmware now.  
-#* '''DO NOT REBOOT THE COPTER YET!''' You must do the install for both the copter and controller before rebooting anything. Once Solex tells you the install is complete, leave the copter and move on to the controller install.
-# '''Install Controller Package:''' From the firmware updates menu in Solex, tap one of the ''Open Solo 4-dev Clean Install (Controller)'' package that you previously downloaded.
-#* Press install. Press install again when prompted again to confirm. ''This is your last chance to change your mind''.
-#* Again, be patient while numerous large files are extracted and scripts execute. Do not push buttons, exit the app, mess with the Solo, etc. Let it do its thing. Until it says it has completed.
-#* Solex will tell you when the whole process is complete.
+#* ''Stock cube users upgrading from the old firmware:'' you will not get any happy tones to indicate firmware loading completed, and the lights will stay disco. This is not a problem, and this is why we're pre-loading the firmware now.
+#* Again, you must do the install for both the controller and the copter before rebooting anything. Once Solex tells you the install is complete, you are ready to proceed.
+
 # '''Reboot:''' Power cycle the Solo and controller once the Solex installation packages have both completed successfully. When they power back on, they will automatically begin installations.
 #* *Unlike in Open Solo 3, the recovery partition will not be updated to Open Solo 4 during the install process. Updating the recovery partition will be done later very easily. You will likely hear the cube reboot and flash its lights twice (firmware install and parameter reset). You will see the controller reboot and say update success once.
 #* It is difficult to know exactly what stage it is at since it can't speak and isn't telepathic. The process takes about 6 minutes on both the solo and the controller.  So just wait about 6 minutes.
