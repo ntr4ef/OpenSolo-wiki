@@ -9,7 +9,7 @@ If your Cube is already on ArduCopter 3.5, 3.6, 3.7, or 4.0, you do not need to 
 The firmware binaries are attached to the releases under assets (https://github.com/OpenSolo/OpenSolo/releases).  You will need the following files:
 * <code>3dr-solo.tar.gz</code>
 * <code>3dr-solo.tar.gz.md5</code>
-* <code>3dr-controller.tar.gz.md5</code>
+* <code>3dr-controller.tar.gz</code>
 * <code>3dr-controller.tar.gz.md5</code>
 * <code>arducopter.apj</code>
 
