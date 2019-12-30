@@ -2,11 +2,9 @@
 
 The team working on safe, reliable releases of Open Solo publishes them here. You can read all the details in the release notes, and link directly to installation instructions. These are the "official" instructions. These instructions supersede any other older instructions, videos, and wikis that came before Open Solo.
 
-== OPEN SOLO 4-dev ==
+== OPEN SOLO 4 ==
 
-'''Open Solo 4, which includes the latest ArduCopter 4-dev (formerly known as 3.7-dev), is now ready for beta testing on all Solos. Even old stock cube solos can use the latest ArduCopter, no green cube required!'''
-
-The changes in Open Solo 4 have already been through rather extensive testing before this beta release, and is very reliable. The only reason it is still beta is the ArduCopter firmware is not a release version yet. Open Solo 4-Beta includes ArduCopter 4-dev.  It will probably not be the official release version of ArduCopter until later in 2019.  However it is extensively tested, safe, and stable for use in the Solo.  It includes the slew rate protection code, making it compatible with all Solos.  Every solo can now have the latest and greatest!
+'''Open Solo 4, which includes the latest ArduCopter 4 (formerly known as 3.7-dev), has been released for all Solos. Even old stock cube solos can use the latest ArduCopter, no green cube required!'''
 
 === Release Notes ===
 Please check out the latest release notes, located in the github releases sections.  Click here to go straight to it: https://github.com/OpenSolo/OpenSolo/releases
@@ -21,7 +19,7 @@ Please check out the latest release notes, located in the github releases sectio
 
 ==== Changes from Open Solo 3 ====
 
-* ArduCopter 4-dev compatible with all Solos. No green cube required!
+* ArduCopter 4 compatible with all Solos. No green cube required!
 * Home button short hold: New smart RTL mode!
 * Unhealthy battery warnings: Monitors cell voltage differences to warn if one cell is getting lower than the others too fast. Also monitors battery's reported full charge capacity to warn the user if it is unhealthy (below 3500mah).
 * GoPro clock set! Will automatically update the GoPro's clock to match the GPS set system clock. The GoPro clock setting requires editing /usr/bin/extSettings.conf. Change the timeOffsetHrs=none to whatever your offset is. For example, eastern time in the USA would be timeOffsetHrs=-5.
@@ -29,9 +27,9 @@ Please check out the latest release notes, located in the github releases sectio
 * Can install on a NIB solo or from a factory reset state without requiring the initial 3DR update first
 * Less annoying haptic (vibration) on the controller when compass is not calibrated yet
 * Improved Fly Mode (loiter mode) is way smoother
-* More installation improvements to prevent bricking
-* Compatibility with ArduCopter's new ChibiOS RTOS and APJ file extensions
-* All improvements, new flight modes, and bugfixes through ArduCopter 3.5, 3.6, and 3.7-dev.
+* Harmonic notch filtering to improve position hold stability by filtering out vibration
+* Automatic landing gear retract and deploy based on altitude
+* All improvements, new flight modes, and bugfixes through ArduCopter 3.5, 3.6, and 4.0
 
 ==== Highlights from Open Solo 3 ====
 
