@@ -1,16 +1,14 @@
 
 == Announcements ==
-'''''Open Solo 4-dev & Open Solo Wiki Soft Launch 9/24/2019:''''' Open Solo 4-dev, built from this new consolidated repository, including ArduCopter 4-dev, is available for installation in Solex, SidePilot, and SSH/SFTP.  Please for the love of god, actually read the installation instructions. The install procedure is different from Open Solo 3 (for the better). Go to the [[Install Open Solo]] page to begin.  I have not updated the SidePilot instructions yet. But if you're already familiar with SidePilot installs, the process is basically the same as the Solex instructions.  SSH/SFTP instructions are updated as well for those who love their keyboards.
+'''''Open Solo 4.0.0 Soft Launch 12/29/2019:''''' Open Solo 4.0.0, built from this new consolidated repository, including ArduCopter 4.0.0, is available for installation in Solex, SidePilot, and SSH/SFTP.  Please for the love of god, actually read the installation instructions. The install procedure is different from Open Solo 3 (for the better). Go to the [[Install Open Solo]] page to begin.  I have not updated the SidePilot instructions yet. But if you're already familiar with SidePilot installs, the process is basically the same as the Solex instructions.  SSH/SFTP instructions are updated as well for those who love their keyboards.
 
-'''''Version Numbers Notes - ArduCopter 4.0 & Open Solo 4.0: ''''' The next release of Open Solo will be a major release. As such, it will go from v3.0 to v4.0.  At this time, the accompanying ArduCopter firmware is the development master (ArduCopter 4-dev). So for the time being, Open Solo 4 will be version 4-dev, then eventually 4-beta (probably October or November).  Once ArduCopter 4.0 is the complete stable release (probably January or February), we'll also call it Open Solo 4.0.
-
-As noted above, the next release of ArduCopter will be a major release.  As such, the version number will be going up to 4.0 rather than 3.7.  The development master branch of ArduCopter has therefore been changed from 3.7-dev to 4-dev.  Open Solo 4 will therefore include ArduCopter 4 for all Solos, fully compatible. *The fact that both are version 4 is completely coincidence, so don't read into that too much*.
+'''''Version Numbers Notes - ArduCopter 4.0 & Open Solo 4.0: ''''' The fact that both are version 4 is completely coincidence, so don't read into that too much*.
 
 '''''Consolidated github repo and wiki are here:''''' ''(Nerd notes. Most general users probably don't know or care what any of this means)'' Many of the separate github repositories for the various aspects of Open Solo have been consolidated into one central repo, which is where you are now.  Anything that wasn't a fork of another repo has been converted to a sub-directory of this repo.  This includes sololink, shotmanager, solo-builder, artoo, sololink-python, stm32loader, meta-3dr, and yocto base.  Conveniently, these are the repos that see the most ongoing development.  As such, it will be much easier to manage that work in one place. Releases, tags, and branches will have some logic and consistency. The commit history from the old separate repos has been retained and all show up here still, so history is not lost or forgotten.
 
 Mavproxy and mavlink-solo remain separate repos, included here as submodules. These are forks from ArduPilot, and shall remain in their repos for that reason.  Ultimately, it would be great to just use the master ArduPilot repos, but the Solo's firmware is too old.  So these forks are circa 2016.  The imx6-linux and imx6-uboot are also still in their own repos. They are forks, and have tens of thousands of commits each. They also are untouched since 2016, and will probably remain so.
 
-ArduPilot-solo is the repo for the old stock ArduCopter firmware from 3DR.  It is a fork from ArduPilot, stale since 2016 other than one commit for Open Solo 3.  This will as such be remaining its own repo, included here as a submodule for reference.  Once ArduCopter 3.7 stable is released, this repo will be obsolete and deprecated.
+ArduPilot-solo is the repo for the old stock ArduCopter firmware from 3DR.  It is a fork from ArduPilot, stale since 2016 other than one commit for Open Solo 3.  This will as such be remaining its own repo, included here as a submodule for reference.  ArduCopter 4.0 has made this old version obsolete and it is no longer used in Open Solo 4.0.
 ----
 
 == INSTALL OPEN SOLO 4! ==
@@ -34,7 +32,9 @@ The team working on safe, reliable releases of Open Solo publishes them here. Yo
 * Improved Fly Mode (loiter mode) is way smoother
 * More installation improvements to prevent bricking
 * Compatibility with ArduCopter's new ChibiOS RTOS and APJ file extensions
-* All improvements, new flight modes, and bugfixes through ArduCopter 3.5, 3.6, and 3.7-dev.
+* Harmonic notch filtering to improve position hold stability by filtering out vibration
+* Automatic landing gear retract and deploy based on altitude
+* All improvements, new flight modes, and bugfixes through ArduCopter 3.5, 3.6, and 4.0.
 
 ==== Highlights from Open Solo 3 ====
 
