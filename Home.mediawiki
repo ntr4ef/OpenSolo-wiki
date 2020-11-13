@@ -83,7 +83,7 @@ All features from Open Solo 3 are still there.  Listing some highlights here for
 * [https://www.facebook.com/groups/176789056089526 Solex Users] group on Facebook
 * [http://www.solexapp.com Solex App] official website. This app is truely the future of Solo's user interface!
 * [https://www.facebook.com/sidepilotapp SidePilot Community] group on Facebook
-* [http://jestersdrones.org/store/l Jester's Drones] for the Green Cube and other cool gear
+* [http://jestersdrones.org/store/ Jester's Drones] for the Green Cube and other cool gear
 * [http://ardupilot.org ArduPilot] homepage
 * [http://ardupilot.org/copter/docs/parameters.html ArduCopter Full Parameter List] details all 800 something parameters in ArduCopter.
 * [http://ardupilot.org/copter/docs/introduction.html ArduCopter introduction]: Learn what you're getting yourself into :)
